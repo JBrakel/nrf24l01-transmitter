@@ -52,11 +52,11 @@ int main(){
     y_right = map((y_right+y_right_offset), 0, 1023, 128, -127);
 
     // Add values to joysticks
-    joysticks.left.x = x_left;
-    joysticks.left.y = y_left;
+    joysticks.left.x = -x_left;
+    joysticks.left.y = -y_left;
     joysticks.left.button = sw_left;
-    joysticks.right.x = x_right;
-    joysticks.right.y = y_right;
+    joysticks.right.x = -x_right;
+    joysticks.right.y = -y_right;
     joysticks.right.button = sw_right;
 
     // Transfer data
